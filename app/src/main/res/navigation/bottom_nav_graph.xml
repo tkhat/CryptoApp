@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.cryptoapp.presentation.dashboard.DashboardFragment"
+        android:label="@string/dashboard"
+        tools:layout="@layout/dashboard_fragment" />
+
+    <fragment
+        android:id="@+id/portfolioFragment"
+        android:name="com.example.cryptoapp.presentation.portfolio.PortfolioFragment"
+        android:label="@string/portfolio"
+        tools:layout="@layout/portfolio_fragment" />
+
+    <fragment
+        android:id="@+id/tradeFragment"
+        android:name="com.example.cryptoapp.presentation.trade.TradeFragment"
+        android:label="@string/trade"
+        tools:layout="@layout/trade_fragment" />
+
+    <fragment
+        android:id="@+id/pricesFragment"
+        android:name="com.example.cryptoapp.presentation.prices.PricesFragment"
+        android:label="@string/prices"
+        tools:layout="@layout/prices_fragment" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.cryptoapp.presentation.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/profile_fragment" />
+
+
+</navigation>
